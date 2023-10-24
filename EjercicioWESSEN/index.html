@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESSEN WIKI</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Wessen Wiki</h1>
+    </header>
+    <main>
+        <div class="container">
+            <aside>
+                <h2>Listado</h2>
+                <ul id="wesen-list"></ul>
+            </aside>
+            <section>
+                <h2>Formulario</h2>
+                <form method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"><br>
+                
+                    <label for="imagen">URL de la Imagen:</label>
+                    <input type="text" id="imagen" name="imagen"><br>
+                
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="seleccione">Seleccione</option>
+                        <option value="lobo">Lobo</option>
+                        <option value="canido">Cánido</option>
+                        <option value="felino">Felino</option>
+                        <option value="reptil">Reptil</option>
+                        <option value="insecto">Insecto</option>
+                        <option value="anfibio">Anfibio</option>
+                        <option value="ave">Ave</option>
+                        <option value="cerdo">Cerdo</option>
+                        <option value="rinoceronte">Rinoceronte</option>
+                        <option value="monstruo">Monstruo</option>
+                    </select><br>
+                
+                    <label for="peligrosidad">Peligrosidad:</label>
+                    <input type="radio" id="pacifico" name="peligrosidad" value="pacifico">Pacífico
+                    <input type="radio" id="neutral" name="peligrosidad" value="neutral">Neutral
+                    <input type="radio" id="peligroso" name="peligrosidad" value="peligroso">Peligroso
+                    <input type="radio" id="violento" name="peligrosidad" value="violento">Violento<br><br>
+                
+                    <label for="descripcion">Descripción del Aspecto:</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="4"></textarea><br>
+                
+                    <label for="notas">Notas del Grimm:</label>
+                    <textarea name="notas" id="notas" cols="30" rows="2"></textarea><br>
+                
+                    <input type="button" value="Añadir Wessen" id="añadir-btn" onclick="anadirWesen()">
+                    <input type="button" value="Modificar Wessen" id="modificar-btn" onclick="modificarWesen()">
+                    <input type="button" value="Eliminar Wessen" id="eliminar-btn" onclick="borrarWesen()">
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Hecho por Javier Zaforas Vives</p>
+    </footer>
+    <script src="Js/script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
